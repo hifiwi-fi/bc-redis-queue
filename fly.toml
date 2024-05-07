@@ -1,9 +1,10 @@
-app = "bc-redis"
+app = "bc-redis-queue"
 primary_region = "lax"
+swap_size_mb = 1024
 
 [mounts]
   destination = "/data"
-  source = "bc_redis_data"
+  source = "bc_redis_queue_data"
 
 [metrics]
   port = 9091
